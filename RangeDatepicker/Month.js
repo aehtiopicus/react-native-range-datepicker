@@ -1,4 +1,4 @@
-'use strict'
+/* eslint-disable */
 import React from 'react';
 import {
 	View,
@@ -118,7 +118,7 @@ export default class Month extends React.Component {
 		const dayStack = this.getDayStack(moment(month, 'YYYYMM'));
 		return (
 			<View>
-				<Text style={{fontSize: 14, padding: 14}}>{moment(month, 'YYYYMM').format("MMMM YYYY")}</Text>
+				<Text style={{fontSize: 18, padding: 14}}>{moment(month, 'YYYYMM').format("MMMM YYYY")}</Text>
 				<View>
 					{
 						dayStack.map((days, i) => {
@@ -132,3 +132,5 @@ export default class Month extends React.Component {
 		);
 	}
 }
+
+/* eslint-enable */
