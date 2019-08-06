@@ -277,7 +277,7 @@ export default class RangeDatepicker extends Component {
 												confirmTitle={this.props.confirmTitle}
 												onReset={this.onReset}
 												onHandleConfirmDate={this.handleConfirmDate}
-												isDisabled={!!this.state.startDate}
+												isDisabled={!this.state.startDate}
 											/>
 										)
 										:
